@@ -22,6 +22,10 @@ class MyCar
   def current_speed
     puts "Your current speed is #{@current_speed}"
   end
+  def spray_paint(color)
+    self.color = color
+    puts "Your new #{color} paint job is great!"
+  end 
 
 end
 
@@ -30,3 +34,8 @@ end
 p camry = MyCar.new(2009, "blue", "bluetooth")
 p camry.speed_up(20)
 p camry.current_speed
+camry.color = 'black'
+p camry
+p camry.spray_paint("green")
+p camry.spray_paint = "brown"
+p camry
