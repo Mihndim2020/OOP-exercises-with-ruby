@@ -15,10 +15,14 @@ class MyCar
   end 
   def shut_off 
     @current_speed = 0
-    puts "You're driving at #{@current_speed}"
+    puts "Let's park the car!"
   end
   def current_speed
     puts "Your current speed is #{@current_speed}"
   end
 
 end
+
+p camry = MyCar.new(2009, "blue", "bluetooth")
+p camry.speed_up(20)
+p camry.current_speed
