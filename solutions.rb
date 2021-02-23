@@ -77,21 +77,15 @@ def better_grade_than?(other_student)
   grade > other_student.grade    
 end
 
- private 
+protected 
+
 def grade 
   @grade 
 end
 
+end
 
-p camry = MyCar.new(2009, "blue", "bluetooth")
-p camry.speed_up(20)
-p camry.current_speed
-camry.color = 'black'
-p camry
-p camry.spray_paint("green")
-p camry.spray_paint = "brown"
-p camry
-camry.gas_mileage(45, 400)
-camry.to_s
-puts MyCar.ancestors
-puts MyTruck.ancestors 
+joe = Student.new("Joe", 90)
+bob = Student.new("Bob", 84)
+
+puts "Well done !" if joe.better_grade_than?(bob)
