@@ -29,3 +29,6 @@ class Account
   "Access denied: incorrect PIN."
   end
   end
+
+  class SavingsAccount < Account 
+  end
