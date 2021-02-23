@@ -1,4 +1,6 @@
 class MyCar
+  attr_accessor :color
+  attr_reader :year
   def initialize(year, color, model)
     @year = year
     @color = color
@@ -22,6 +24,8 @@ class MyCar
   end
 
 end
+
+
 
 p camry = MyCar.new(2009, "blue", "bluetooth")
 p camry.speed_up(20)
